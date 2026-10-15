@@ -57,8 +57,16 @@ Prerequisites will be documented as each phase introduces them. The planned stac
 - PostgreSQL
 - Node.js 20+ and npm
 
+To start the Phase 1 API and PostgreSQL locally with Docker:
+
+```bash
+docker compose up --build
+```
+
+The health check is available at `http://localhost:8000/health`. For a non-Docker API run, copy `backend/.env.example` to `backend/.env` and set `DATABASE_URL` for your local PostgreSQL instance.
+
 Later payment work needs Razorpay **test** credentials and an ngrok auth token. Keep credentials in local environment files; do not commit them.
 
 ## Status
 
-Phase 1 — Backend Foundation: in progress.
+Phase 1 — Backend Foundation: complete.
