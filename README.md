@@ -70,3 +70,5 @@ Later payment work needs Razorpay **test** credentials and an ngrok auth token. 
 ## Status
 
 Phase 1 — Backend Foundation: complete.
+
+Phase 2 — Core Business Logic: complete.

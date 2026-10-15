@@ -27,5 +27,14 @@ class BaseRepository(Generic[ModelType]):
         self.session.flush()
         return entity
 
+    def save(self, entity: ModelType) -> ModelType:
+        self.session.add(entity)
+        self.session.commit()
+        self.session.refresh(entity)
+        return entity
+
+    def rollback(self) -> None:
+        self.session.rollback()
+
     def delete(self, entity: ModelType) -> None:
         self.session.delete(entity)
