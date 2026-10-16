@@ -74,3 +74,5 @@ Phase 1 — Backend Foundation: complete.
 Phase 2 — Core Business Logic: complete.
 
 Phase 3 — Frontend Foundation & UI Kit: complete.
+
+Phase 4 — Applicant Wizard: complete.
