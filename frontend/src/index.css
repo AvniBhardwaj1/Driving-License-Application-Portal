@@ -1,0 +1,23 @@
+@import "tailwindcss";
+
+@theme {
+  --color-trust-blue-50: #eff6ff;
+  --color-trust-blue-600: #2563eb;
+  --color-trust-blue-700: #1d4ed8;
+  --color-trust-blue-800: #1e40af;
+}
+
+@layer base {
+  * {
+    @apply border-slate-200;
+  }
+
+  body {
+    @apply min-w-80 bg-slate-50 font-sans text-slate-900 antialiased;
+  }
+
+  button,
+  input {
+    font: inherit;
+  }
+}
